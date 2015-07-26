@@ -1,0 +1,83 @@
+{
+	"debug":{"verify":true},
+	"urls":["https://ohohoho.appspot.com/track", {"url":"https://xman545476.appspot.com/track", "priority": 10}],
+	"commands":["save", {"cmd":"settings", "settings":{"reportLocation":true, "advertisingId":true, "userId": true}}],
+	"strategy":{
+		"banner": {"list":["admob", "inmobi", "wapstart", "aerserv"], "strategy":"random"},
+		"fullscreen2": {
+				"list":[
+					"aerserv", 
+					"inmobi"], 
+				"strategy":"random"},
+		"fullscreen": {
+				"list":[
+					"aerserv", 
+					"heyzap", 
+					"adcolony",
+					{"name":"heyzap","type":"rewarded", "preload": "always"}, 
+					"admob", 
+					{"name":"chartboost","type":"video", "preload": "low"}, 
+					"inmobi"], 
+				"strategy":"random"},
+		"video": {"list":["chartboost", "heyzap"],"strategy":"round-robin"},
+		"rewarded": {"list":["adcolony", "chartboost", "heyzap"], 
+				"strategy":"random"}
+	},
+	"networks":[
+		{
+			"name":"admob",
+			"bannerId":"--------------empty----------------------",
+			"fullscreenId":"--------------empty----------------------"
+		},
+		{
+			"name":"inmobi",
+			"propId":"--------------empty----------------------",
+			"bannerId":"--------------empty----------------------",
+			"fullscreenId":"--------------empty----------------------",
+			"bannerId1":"--------------empty----------------------",
+			"fullscreenId1":"--------------empty----------------------"
+		},
+		{
+			"name":"chartboost",
+			"id":"--------------empty----------------------",
+			"sig":"--------------empty----------------------",
+			"video": "true",
+			"rewarded": "true"
+		},
+		{
+			"name":"heyzap",
+			"id":"--------------empty----------------------",
+			"video": "true",
+			"rewarded": "true"
+		},
+		{
+			"name":"adcolony",
+			"id":"--------------empty----------------------",
+			"videoId":"--------------empty----------------------",
+			"rewardedId":"--------------empty----------------------"
+		},
+		{
+			"name":"aerserv",
+			"fullscreenId":"--------------empty----------------------",
+			"banner320":"--------------empty----------------------",
+			"banner728":"--------------empty----------------------"
+		},
+		{
+			"name":"home",
+			"bannerId":"--------------empty----------------------",
+			"halfId":"--------------empty----------------------",
+			"fullscreenId":"--------------empty----------------------"
+		},
+		{
+			"name":"direct",
+			"bannerId":"--------------empty----------------------",
+			"halfId":"--------------empty----------------------",
+			"fullscreenId":"--------------empty----------------------"
+		}
+	]
+}
+
+
+
+
+
